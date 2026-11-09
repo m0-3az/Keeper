@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Instrumented-test manifest. Production declarations live in the frozen app manifest;
+      these entries only let the library's own instrumentation APK launch the screens under test.
+    -->
+    <application>
+        <activity
+            android:name="com.keeper.vault.auth.SecretSetupActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity
+            android:name="com.keeper.vault.auth.UnlockActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+    </application>
+</manifest>

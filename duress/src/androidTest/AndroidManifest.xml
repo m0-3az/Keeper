@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Instrumented-test manifest. Production declarations live in the frozen app manifest. These
+      entries only let the library's own instrumentation APK launch the screens and inspect the
+      service declaration without an app edit.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+
+    <application>
+        <activity
+            android:name="com.keeper.vault.duress.IntruderSettingsActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+        <activity
+            android:name="com.keeper.vault.duress.IntruderLogActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+        <service
+            android:name="com.keeper.vault.duress.IntruderCaptureService"
+            android:exported="false"
+            android:foregroundServiceType="camera"
+            android:stopWithTask="true" />
+    </application>
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Instrumented-test manifest. The production declarations live in the app manifest (frozen);
+      these entries only make the library's own instrumentation APK able to launch the screen and
+      inspect the service declaration.
+    -->
+    <application>
+        <activity
+            android:name="com.keeper.vault.presence.PresenceEnrollmentActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+        <service
+            android:name="com.keeper.vault.presence.PresenceShieldService"
+            android:exported="false"
+            android:foregroundServiceType="camera"
+            android:stopWithTask="true" />
+    </application>
+</manifest>

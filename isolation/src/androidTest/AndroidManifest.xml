@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Instrumented-test manifest. Production declarations live in the frozen app manifest;
+      this entry only lets the library's own instrumentation APK launch the screen under test.
+    -->
+    <application>
+        <activity
+            android:name="com.keeper.vault.isolation.TamperLogActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+    </application>
+</manifest>

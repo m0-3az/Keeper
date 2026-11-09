@@ -1,0 +1,58 @@
+# Android/Gradle
+build/
+**/build/
+.gradle/
+.kotlin/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle wrapper (must be committed)
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# AI/Agent state
+.worktrees/
+.agent/
+.opencode/
+
+# Secrets / signing
+*.jks
+*.keystore
+*.bks
+*.p12
+*.pfx
+*.pem
+*.key
+*password*.txt
+*password*.properties
+*password*.json
+keystore.properties
+signing.properties
+.env
+.env.*
+!.env.example
+
+# Artifacts and Reports (do not push large binaries)
+*.apk
+*.aab
+*.idsig
+Keeper_Security_Audit.pdf
+Keeper_Final_Delivery_Report.pdf
+final report . txt
+final report
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Never commit plaintext vault or intruder data
+*.plain
+/intruder/

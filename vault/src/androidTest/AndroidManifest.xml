@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!--
+          Instrumented-test manifest. Production declarations live in the frozen app manifest;
+          this entry only lets the library's own instrumentation APK launch the screen under test.
+        -->
+        <activity
+            android:name="com.keeper.vault.vault.VaultActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.NoActionBar" />
+
+        <!-- Used by SourceDocumentDeleterTest to exercise the real
+             DocumentsContract.deleteDocument path without a system file picker. -->
+        <provider
+            android:name="com.keeper.vault.vault.ui.TestDocumentProvider"
+            android:authorities="com.keeper.vault.vault.test.docs"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+    </application>
+</manifest>

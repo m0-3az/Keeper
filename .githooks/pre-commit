@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Every commit runs the deterministic checks. No bypass flag: the brief requires proof, not
+# reviewer judgment.
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+bash scripts/verify-phase0.sh

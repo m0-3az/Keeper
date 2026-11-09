@@ -1,0 +1,14 @@
+Keeper is offered under your choice of any one of the following licenses:
+
+  * Apache License, Version 2.0 — LICENSES/Apache-2.0.txt
+  * MIT License — LICENSES/MIT.txt
+  * GNU General Public License, Version 3.0 — LICENSES/GPL-3.0.txt
+
+You may use, modify, and distribute Keeper under whichever of these licenses
+best fits your needs. If you do not state a choice, the Apache License 2.0
+applies.
+
+Copyright (c) 2026 Keeper contributors.
+
+Third-party components carry their own licenses; see THIRD_PARTY_NOTICES.md
+and third_party/.

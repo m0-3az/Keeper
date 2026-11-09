@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tamper_banner_title">Security warning</string>
+    <string name="tamper_banner_backups_enabled">Device backups are enabled. Vault files could be copied off this device.</string>
+    <string name="tamper_banner_debuggable">This is a debuggable build. Do not store real secrets in it.</string>
+    <string name="tamper_banner_limit">Keeper warns but cannot block a compromised device. A rooted, debugged, or accessibility-hooked system can read what is on screen.</string>
+    <string name="tamper_banner_details">Open tamper log</string>
+
+    <string name="tamper_log_title">Tamper log</string>
+    <string name="tamper_log_subtitle">Warnings only. No app can make a compromised device trustworthy.</string>
+    <string name="tamper_log_empty">No tamper signals recorded.</string>
+    <string name="tamper_log_clear">Clear log</string>
+    <string name="tamper_log_clear_failed">The log could not be cleared. The stored entries were kept.</string>
+    <string name="tamper_log_read_failed">The tamper log could not be read. No entries are shown.</string>
+    <plurals name="tamper_log_summary">
+        <item quantity="one">%1$d signal recorded</item>
+        <item quantity="other">%1$d signals recorded</item>
+    </plurals>
+
+    <string name="tamper_kind_root">Root access</string>
+    <string name="tamper_kind_debugger">Debugger or debuggable build</string>
+    <string name="tamper_kind_accessibility">Accessibility service enabled</string>
+    <string name="tamper_kind_emulator">Emulator indicators</string>
+    <string name="tamper_kind_hook">Hooking framework</string>
+    <string name="tamper_kind_unknown">Unclassified warning</string>
+</resources>
