@@ -23,6 +23,13 @@ WorkManager, biometric, and long-duration hardware checks remain open. Read `LIM
 The source is available for review. The app is **not cleared for public APK distribution**;
 legal review of the intruder-capture disclosure is pending.
 
+## Download
+
+A sideloadable **0.1.5-debug** preview is attached to
+[Releases](https://github.com/m0-3az/Keeper-public/releases). It is a debug build, not a
+production or app-store release; do not use it for sensitive real data. Build from source for any
+other variant.
+
 ## Toolchain
 
 The verified local toolchain is:
